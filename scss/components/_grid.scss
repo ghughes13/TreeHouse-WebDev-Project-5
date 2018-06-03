@@ -2,10 +2,28 @@
   max-width: 85%;
   margin: auto;
   text-align: center;
+  @media (min-width: $brkpt-L) {
+    max-width: 70%;
+
+  }
 }
 
 .grid__row {
   display: flex;
   flex-direction: column;
   margin: 45px auto;
+  @media (min-width: $brkpt) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+}
+
+.grid__col--12 {
+  @media (min-width: $brkpt) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
 }

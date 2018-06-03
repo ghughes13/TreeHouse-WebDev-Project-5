@@ -16,6 +16,9 @@
     width: 100%;
     text-transform: uppercase;
     @include btnBase;
+    @media (min-width: $brkpt) {
+      margin: 20px;
+    }
   }
 }
 
@@ -27,5 +30,10 @@
     font-size: .5em;
     @include btnBase;
     color: darken(grey, 10%);
+    @media (min-width: $brkpt) {
+      flex: 1;
+      margin: 5px;
+      text-align: center;
+    }
   }
 }

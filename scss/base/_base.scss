@@ -1,3 +1,12 @@
+@import 'utilities/variables';
+
 * {
   font-family: 'PT Sans', sans-serif;
+}
+
+body {
+  @media (min-width: $brkpt-L) {
+    -moz-transform: scale(1.2); /* for Firefox, default 1*/
+    zoom:120%; /* For Chrome, IE, default 100%*/
+  }
 }

@@ -1,5 +1,9 @@
 .img--logo {
   padding: 5% 3% 0 0 ;
+  @media (min-width: $brkpt) {
+    padding: 0;
+    margin-right: 20%;
+  }
 }
 
 .img--frame {

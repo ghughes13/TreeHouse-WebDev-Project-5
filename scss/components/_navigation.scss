@@ -17,3 +17,29 @@
     }
   }
 }
+
+.nav {
+  @media (min-width: $brkpt) {
+    display: flex;
+    flex-direction: row;
+  .nav__item {
+    font-size: 1em;
+  }
+ }
+}
+
+
+.grid__col--12>.card {
+  text-align: left;
+  p:first-child {
+    line-height: 1.5em;
+    font-weight: 400;
+    padding: 10% 0%;
+  }
+  @media (min-width: $brkpt) {
+    width: 100%;
+    p:first-child {
+    padding: 0%;
+  }
+ }
+}
