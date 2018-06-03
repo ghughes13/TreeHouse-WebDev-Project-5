@@ -1,0 +1,31 @@
+@mixin btnBase {
+  color: white;
+  font-size: 1.25em;
+  border-radius: 3px;
+
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+
+@each $type, $color in $btnColors {
+  .btn--#{$type} {
+    background-color: $color;
+    margin-top: 5%;
+    width: 100%;
+    text-transform: uppercase;
+    @include btnBase;
+  }
+}
+
+@each $number, $color in $gridColors {
+  .theme__colors.grid__col--#{$number} {
+    background-color: $color;
+    margin-top: 5px;
+    text-align: left;
+    font-size: .5em;
+    @include btnBase;
+    color: darken(grey, 10%);
+  }
+}
