@@ -10,7 +10,6 @@
   }
   &:hover {
     background-color: $teal;
-
     border-radius: 10px;
     a {
       color: white;
@@ -19,9 +18,8 @@
 }
 
 .nav {
-  @media (min-width: $brkpt) {
-    display: flex;
-    flex-direction: row;
+  @include mq('reg') {
+    @include flexBrkPtAddins;
   .nav__item {
     font-size: 1em;
   }
@@ -36,10 +34,12 @@
     font-weight: 400;
     padding: 10% 0%;
   }
-  @media (min-width: $brkpt) {
+  @include mq('reg') {
     width: 100%;
+    margin-right: 0%;
     p:first-child {
     padding: 0%;
+
   }
  }
 }

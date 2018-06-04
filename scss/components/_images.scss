@@ -1,6 +1,6 @@
 .img--logo {
   padding: 5% 3% 0 0 ;
-  @media (min-width: $brkpt) {
+  @include mq('reg') {
     padding: 0;
     margin-right: 20%;
   }

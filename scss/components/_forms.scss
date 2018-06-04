@@ -12,4 +12,19 @@
   border-bottom: 6px solid lighten($green, 20%);
   border-radius: 2px;
   font-weight: bold;
+  @include mq('reg') {
+    margin: 0;
+  }
+}
+
+@include mq('reg') {
+  .form .btn--default {
+  margin: 0;
+  margin-top: 10px;
+}
+.form {
+  width: 300px;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+ }
 }

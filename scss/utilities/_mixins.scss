@@ -2,11 +2,29 @@
   color: white;
   font-size: 1.25em;
   border-radius: 3px;
-
   padding: 10px;
   border: none;
   outline: none;
 }
+
+@mixin mq($width) {
+  @if $width == "reg" {
+    @media (min-width: $brkpt) {
+      @content;
+    }
+  }
+  @else if $width == "lrg" {
+    @media (min-width: $brkpt-L) {
+      @content;
+    }
+  }
+}
+
+@mixin flexBrkPtAddins {
+  display: flex;
+  flex-direction: row;
+}
+
 
 
 @each $type, $color in $btnColors {

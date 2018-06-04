@@ -5,6 +5,9 @@
     font-weight: 400;
     padding: 10% 0%;
   }
+  @include mq('reg') {
+    margin-right: 10%;
+  }
 }
 
 .headline--secondary {
