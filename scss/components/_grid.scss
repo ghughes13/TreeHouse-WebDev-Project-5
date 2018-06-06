@@ -19,6 +19,12 @@
   }
 }
 
+.theme__colors.grid__col--7, .theme__colors.grid__col--8 {
+  @media (min-width: $brkpt){
+  flex: 2;
+  }
+}
+
 .grid__col--12 {
   @include mq('reg') {
     @include flexBrkPtAddins;
